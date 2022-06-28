@@ -1,41 +1,54 @@
-// Number of Ways of Cutting Pizza
+#include <string.h>
 
-char** pizza;
-int row, col;
-long long memo[51][51][11];
-int contain(int startX, int startY, int endX, int endY){
-    for (int i = startX; i < endX; i++){
-        for (int j = startY; j < endY; j++){
-            if (pizza[i][j] == 'A') return 1;
-        }
-    }
-    return 0;
+#define MOD 1000000007
+int n, m;
+char **pizza;
+long long memo[51][51][11]; // Memoization
+
+// each piece contains at least one apple.
+int contain(int row_start, int row_end, int column_start, int column_end){
+	for (int i = row_start; i < row_end; i++){
+		for (int j = column_start; j < column_end; j++){
+			if (pizza[i][j] == 'A') return 1;
+		}
+	}
+	return 0;
 }
-long long cut(int i, int j, int k){ 
-    if (memo[i][j][k] != -1) return memo[i][j][k];
-    if (k == 1) return contain(i, j, row, col);
-   
-    long long res = 0;
-    
-    for (int index = i + 1; index < row; index++){
-        if (contain(i, j, index, col)){
-            res += cut(index, j, k - 1);
-        }
-    }
-    
-    for (int index = j + 1; index < col; index++){
-        if (contain(i, j, row, index)){
-            res += cut(i, index, k - 1);
-        }
-    }
-    
-    return memo[i][j][k] =  res;
+
+long long cut(int row, int column, int k){
+	if (memo[row][column][k] != -1) return memo[row][column][k];
+	if (k == 1) return contain(row, n, column, m); // each piece contains at least one apple. 
+
+	long long res = 0; // the number of ways of cutting pizza[row:N][column:M] into k pieces.
+
+	// row cutting
+	for (int i = row + 1; i < n; i++){
+		if (contain(row, i, column, m)){
+			res += cut(i, column, k - 1);
+		} 
+	}
+
+	// column cutting
+	for (int i = column + 1; i < m; i++){
+		if (contain(row, n, column, i)){
+			res += cut(row, i, k - 1);
+		}
+	}
+	return memo[row][column][k] = res;
 }
 
 int ways(char ** _pizza, int pizzaSize, int k){
-    memset(memo, -1, sizeof(memo));
-    pizza = _pizza;
-    row = pizzaSize;
-    col = strlen(pizza[0]);
-    return cut(0, 0, k) % 1000000007;
+	memset(memo, -1, sizeof(memo));
+	n = pizzaSize;
+    m = strlen(_pizza[0]);
+	pizza = _pizza;
+	return cut(0, 0, k) % MOD;
 }
+
+/*
+💖 Approach
+- "Exhaustive Search" : For each cut, test all possibilities + Memoization
+- "cut(row, column, k)" = the number of ways of cutting pizza[row:N][column:M] into k pieces.
+*/
+
+// https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
