@@ -1,4 +1,5 @@
 // Find the first occurrence of citations[i] ≥ citationsSize - i is true
+// O(logN)
 int hIndex(int* citations, int citationsSize){
     int res = 0;
     int left = 0;
