@@ -1,6 +1,6 @@
 # Sorting
 
-## Sorting Algorithms
+## 📝 Sorting Algorithms
 
 |   Algorithm    | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
 | :------------: | :------------------: | :---------------------: | :-------------------: |
@@ -15,13 +15,13 @@
 
 <br/>
 
-## Comparison vs Non-comparison
+## Comparison 🆚 Non-comparison
 
-1. Comparison sorting algorithms : algorithms that compare two numbers to sort them
+1. Comparison sorting algorithms : algorithms that **compare two numbers to sort them**
    - Minimum time complexity : O(NlogN)
    - O(logN!) = O(NlogN)
-2. Non-comparison sorting algorithms do not use comparison
-   - **Constraints**: we need to know the distribution of input number
+2. Non-comparison sorting algorithms : **do not use comparison**
+   - 🚧 **Constraints**: we need to know the distribution of input number
    - ex) natural numbers less than 1000
    - radix sort, counting sort
 
