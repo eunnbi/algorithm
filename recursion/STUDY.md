@@ -106,7 +106,7 @@ int main(){
 // Fibo(8) is computed twice!
 ```
 
-### 👉 Memoization
+#### 👉 Memoization
 
 Remember the answer of a small problem by taking a memo to avoid the duplicate work caused by the branching
 
@@ -169,7 +169,7 @@ int main(){
 - When you do exhaustive search (testing all possibilities), sometimes the search space is too big to be searched in time.
 - You need to **prune** the search tree by rejecting unpromising solutions ASAP.
 
-### 👉 Pruning
+#### 👉 Pruning
 
 - narrow down search space
 - [target sum - leetcode 494](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/494.cpp)
