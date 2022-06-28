@@ -1,9 +1,8 @@
-// N-Queens 2
-
 int col[10];
 int d1[20];
 int d2[20];
 int cnt;
+
 void sol(int n, int i){
     if (i == n) {
         cnt++;
@@ -23,3 +22,5 @@ int totalNQueens(int n){
     sol(n, 0);
     return cnt;
 }
+
+// https://leetcode.com/problems/n-queens-ii/
