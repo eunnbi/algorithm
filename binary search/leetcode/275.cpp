@@ -1,5 +1,4 @@
-// H-index 2
-
+// Find the first occurrence of citations[i] ≥ citationsSize - i is true
 int hIndex(int* citations, int citationsSize){
     int res = 0;
     int left = 0;
@@ -15,3 +14,5 @@ int hIndex(int* citations, int citationsSize){
     }
     return res;
 }
+
+// https://leetcode.com/problems/h-index-ii/
