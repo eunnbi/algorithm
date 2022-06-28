@@ -40,7 +40,7 @@ long long cut(int row, int column, int k){
 int ways(char ** _pizza, int pizzaSize, int k){
 	memset(memo, -1, sizeof(memo));
 	n = pizzaSize;
-    m = strlen(_pizza[0]);
+   	m = strlen(_pizza[0]);
 	pizza = _pizza;
 	return cut(0, 0, k) % MOD;
 }
