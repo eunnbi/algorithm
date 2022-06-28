@@ -41,7 +41,7 @@ long long cut(int row, int column, int k){
 int ways(char ** _pizza, int pizzaSize, int k){
 	memset(memo, -1, sizeof(memo));
 	n = pizzaSize;
-    m = strlen(_pizza[0]);
+   	m = strlen(_pizza[0]);
 	pizza = _pizza;
 	return cut(0, 0, k) % MOD;
 }
@@ -51,7 +51,6 @@ int ways(char ** _pizza, int pizzaSize, int k){
 - "Exhaustive Search" : For each cut, test all possibilities + Memoization
 - "cut(row, column, k)" = the number of ways of cutting pizza[row:N][column:M] into k pieces.
 */
-
 
 // 2.
 // 피자 조각이 하나 이상의 사과를 포함하는지 확인하는 부분을 최적화하기 위해 "2D-array prefix sum" 이용하기
