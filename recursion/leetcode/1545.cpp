@@ -1,4 +1,3 @@
-// Find K-th Bit in N-th Binary String
 
 char findKthBit(int n, int k){
     if (n == 1) return '0';
@@ -7,3 +6,5 @@ char findKthBit(int n, int k){
     else if (k == i) return '1';
     else return '0' + '1' - findKthBit(n - 1, (1 << n) - k);
 }
+
+// https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/
