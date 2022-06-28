@@ -17,8 +17,8 @@ bool PredictTheWinner(int* nums, int numsSize){
 💡 Approach
 - "optimal play" : The player considers all possibilities and makes a choice that results in the biggest score difference.
     ⇒ "consider all possibilities" : a hint for recursion
-
 - This kind of problems, i.e., two players + optimal play + winner prediction, are usually recursion or dynamic programming problems.
+
 - "predict(nums, s, e, turn)" : the maxinum score difference that P1 can make using the array nums[s:e]
     - answer: "predict(nums, s, e, turn)" ≥ 0
     - turn: 1 (p1) or -1 (p2)
