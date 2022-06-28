@@ -1,4 +1,4 @@
-// Letter Tile Possibilities
+#include <string.h>
 
 int count = 0;
 int freq[26];
@@ -22,3 +22,14 @@ int numTilePossibilities(char * tiles){
     gen();
     return count;
 }
+
+/*
+✨ Approach
+
+1. Count the frequency of each alphabet in tiles
+2. If "freq[i] > 0", you can generate another string by appending an alphabet to the current string. (decrement "freq[i]"" by 1)
+3. the number of unique strings  = # of different ways to decrement "freq[i]" so that all elements become 0
+
+*/
+
+// https://leetcode.com/problems/letter-tile-possibilities/
