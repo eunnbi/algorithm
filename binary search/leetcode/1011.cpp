@@ -1,5 +1,5 @@
-// Capacity To Ship Packages Within D Days
 
+// given "capacity", function returns possible["capacity"]
 int isPossible(int* weights, int weightsSize, int days, int capacity){
     int sum = 0;
     int res = 1;
@@ -14,6 +14,7 @@ int isPossible(int* weights, int weightsSize, int days, int capacity){
     return res <= days;
 }
 
+// find the first occurence of 1
 int shipWithinDays(int* weights, int weightsSize, int days){
     int res = 0;
     int left = 0;
@@ -28,3 +29,22 @@ int shipWithinDays(int* weights, int weightsSize, int days){
     }
     return res;
 }
+
+/*
+👉 Approach
+- We want to find the least weight capacity
+- If a capacity 'c' is too small, it would be impossible to ship on time
+- If 'c' is too big, it would be always possible
+- 'c' is possible, 'c + 1' is also possible
+⇒ These observations give us a hint on the solution space
+
+📝 Solution Space
+- capacity: 0, 1, 2, 3, 4, 5, 6,....
+- possible[capacity]: 0, 0, 0, 0, 0, ... , 1, 1, 1, 1
+
+🚀 Conclusion
+- We want to find the first occurrence of 1 int the "possible" array ⇒ BS problem
+- We can compute "possible[c]" on the fly!
+*/
+
+// https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
