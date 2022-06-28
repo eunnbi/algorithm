@@ -1,4 +1,4 @@
-// Minimum Moves to Equal Array Elements 2
+#define abs(x) ((x) < 0 ? (-(x)) : (x))
 
 int sorted[100003];
 void merge(int* nums, int left, int right, int mid){
@@ -28,13 +28,15 @@ void mergeSort(int* nums, int left, int right){
         merge(nums, left, right, mid);
     }
 }
+
+
 int minMoves2(int* nums, int numsSize){
     mergeSort(nums, 0, numsSize - 1);
-    int median = nums[numsSize / 2];
-    int res = 0;
-    for (int i = 0; i < numsSize; i++){
-        int num = nums[i] - median;
-        res += (num >= 0) ? num : -num;
-    }
-    return res;
+    int median = nums[numsSize / 2]; // 핵심 : 중앙값 찾기
+    int sum = 0;
+    for (int i = 0; i < numsSize; i++) sum += abs(nums[i] - median);
+    return sum;
 }
+
+// This problem is equivalent to compute "argmin(x)Σ(arr(i) - x)" => Key : Sort and Get Median
+// https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
