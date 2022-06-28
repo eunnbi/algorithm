@@ -1,6 +1,6 @@
 # Queue
 
-> FIFO (First In First Out)
+👉 **FIFO (First In First Out)**
 
 <br/>
 
