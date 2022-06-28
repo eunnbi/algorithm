@@ -1,5 +1,3 @@
-// Nth Digit
-
 int tens[] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
 long long num_digits(int m){
@@ -37,3 +35,5 @@ int findNthDigit(int n){
     }
     return t % 10;
 }
+
+// https://leetcode.com/problems/nth-digit/
