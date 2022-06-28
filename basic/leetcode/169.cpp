@@ -35,6 +35,4 @@ int majorityElement(int* nums, int numsSize){
 }
 
 
-
-
 // https://leetcode.com/problems/majority-element/
