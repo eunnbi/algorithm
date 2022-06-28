@@ -2,8 +2,8 @@
 // 1.
 int test(int* nums, int n, int i, int target){
     if (i == n){
-	    if (target == 0) return 1;
-	    else return 0;
+	 if (target == 0) return 1;
+	 else return 0;
     }
     
     int sum = 0;
