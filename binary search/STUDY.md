@@ -2,7 +2,7 @@
 
 > **Time Complexity**
 >
-> - `logN` terms usually appear when you **divide the problem (or data) into two (or k) pieces.**
+> - `logN` terms usually appear when you **divide the problem (or data) into two (or k) pieces.** ✌️
 > - Data structures / algorithms that introduce `logN` terms
 >   - **Binary Search**
 >   - **Sort algorithms (quick sort, merge sort, ...)**
