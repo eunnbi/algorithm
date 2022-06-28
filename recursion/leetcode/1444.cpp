@@ -90,7 +90,7 @@ int ways(char ** pizza, int pizzaSize, int k){
 	memset(memo, -1, sizeof(memo));
 	memset(prefix, 0, sizeof(prefix));
 	n = pizzaSize;
-    m = strlen(pizza[0]);
+    	m = strlen(pizza[0]);
 	for (int i = 1; i <= n; i++){
 		for (int j = 1; j <= m; j++){
 			prefix[i][j] = prefix[i - 1][j] + prefix[i][j - 1] - prefix[i - 1][j - 1];
