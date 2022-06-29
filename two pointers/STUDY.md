@@ -6,9 +6,8 @@
 
 ### Example
 
-Given a sorted array, find two elements whose sum is M.
-
-if `a[i] + a[j] > M`, you don’t have to check `a[i] + a[k]` where `k > j` because the array is sorted.
+- Given a sorted array, find two elements whose sum is M.
+- If `a[i] + a[j] > M`, you don’t have to check `a[i] + a[k]` where `k > j` because the array is sorted.
 
 <br/>
 
