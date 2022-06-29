@@ -49,3 +49,24 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     *returnSize = index;
     return res;
 }
+
+
+// 중복 없는 교차 배열을 구하기
+// https://leetcode.com/problems/intersection-of-two-arrays/
+int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize){
+    int size = (nums1Size < nums2Size) ? nums1Size : nums2Size;
+    int * res = (int *)malloc(sizeof(int) * size);
+    int count[1001] = { 0, };
+    
+    for (int i = 0; i < nums1Size; i++) count[nums1[i]]++;
+    
+    int index = 0;
+    for (int i = 0; i < nums2Size; i++){
+        if (count[nums2[i]]) {
+            count[nums2[i]] = 0; // 변경된 부분
+            res[index++] = nums2[i];
+        }
+    }
+    *returnSize = index;
+    return res;
+}
