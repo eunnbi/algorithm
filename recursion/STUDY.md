@@ -78,11 +78,9 @@ void f(int i){ // i : index of res
 2. Generating **permutations** of length `n` using `n` numbers
    - `seq[i]` can be any or the n numbers that are not used in `seq[0:i-1]`
    - We maintained the _used_ array to check if each digit has been used or not
-   - [permutation sequence - leetcode 60](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/60.cpp)
 3. Generating **combinations** of length `k` using `n` numbers
    - `seq[i]` must be larger than `seq[i-l]` ⇒ increasing order
    - **We fill `seq[i]` using each digit in `[seq[i - 1] + 1, n]`**
-   - [combinations - leetcode 77](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/77.cpp)
 
 <br/>
 
@@ -167,12 +165,11 @@ int main(){
 ### 3. Excessive Search Space
 
 - When you do exhaustive search (testing all possibilities), sometimes the search space is too big to be searched in time.
-- You need to **prune** the search tree by rejecting unpromising solutions ASAP.
 
 #### 👉 Pruning
 
+- You need to **prune** the search tree by rejecting unpromising solutions ASAP.
 - narrow down search space
-- [target sum - leetcode 494](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/494.cpp)
 
 <br/>
 
@@ -198,3 +195,19 @@ int main(){
 4. Recursion first
    - Always check the stop condition first, and then do recursion
 5. Memo taken but not used
+
+<br/>
+
+## ❓ Problems
+
+| Leetcode                                                                                                         |
+| :--------------------------------------------------------------------------------------------------------------- |
+| [Find K-th Bit in N-th Binary String](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1545.cpp) |
+| [Predict the Winner](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/486.cpp)                   |
+| [Sum of All Subset XOR Totals](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1863.cpp)        |
+| [Permutation Sequence](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/60.cpp)                  |
+| [Combinations](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/77.cpp)                          |
+| [Target Sum](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/494.cpp)                           |
+| [Letter Tile Possibilities](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1079.cpp)           |
+| [N-Queens 2](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/52.cpp)                            |
+| [Number of Ways of Cutting Pizza](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1444.cpp)     |
