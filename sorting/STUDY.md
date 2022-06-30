@@ -127,7 +127,14 @@ void countingSort(int arr[], int n){
 	}
 }
 
-
 // Time complexity: O(N+K)
 // Space complexity: O(N)
 ```
+
+<br/>
+
+## ❓ Problems
+
+| Leetcode                                                                                                          |
+| :---------------------------------------------------------------------------------------------------------------- |
+| [Minimum Moves to Equal Array Elements 2](https://github.com/eunnbi/algorithm/blob/main/sorting/leetcode/462.cpp) |
