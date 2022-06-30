@@ -176,3 +176,18 @@ int main(){
 	}
 }
 ```
+
+<br/>
+
+## ❓ Problems
+
+| Leetcode                                                                                                                |
+| :---------------------------------------------------------------------------------------------------------------------- |
+| [Longest Increasing Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/300.cpp)  |
+| [Longest Common Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/1143.cpp)     |
+| [Longest Palindromic Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/516.cpp) |
+| [Partition Equal Subset Sum](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/416.cpp)      |
+| [Wildcard Matching](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/44.cpp)                |
+| [Edit Distance](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/72.cpp)                    |
+| [Perfect Squares](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/279.cpp)                 |
+| [Burst Balloons](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/312.cpp)                  |
