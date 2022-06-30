@@ -1,6 +1,6 @@
-int dp[2501];
+int dp[2501]; //  LIS 길이
 int lengthOfLIS(int* nums, int numsSize){
-    dp[0] = 1;
+    dp[0] = 1; // base case
     int max = 0;
     for (int i = 1; i < numsSize; i++){
         dp[i] = 1;
