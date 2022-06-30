@@ -1,6 +1,6 @@
 # ✍️ Algorithm Study
 
-|                                    Data Structure and Algorithm                                     |
+|                                    🧩 Data Structure and Algorithm                                |
 | :-------------------------------------------------------------------------------------------------: |
 |                                                Array                                                |
 |         [Linked List](https://github.com/eunnbi/algorithm/blob/main/linked%20list/STUDY.md)         |
