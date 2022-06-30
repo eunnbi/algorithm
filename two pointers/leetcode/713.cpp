@@ -1,6 +1,6 @@
 
 int numSubarrayProductLessThanK(int* nums, int numsSize, int k){
-    int i = 0, j = 0; // two pointers ✌️
+    int i = 0, j = 0; // Increasing two pointers ✌️
     int res = 0;
     int prod = 1;
     for (i = 0; i < numsSize; i++){
