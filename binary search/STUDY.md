@@ -153,5 +153,14 @@ int search(int arr[], int l, int r, int target){
 
 - Usually we perform binary search on the given input.
 - But, “Tricky” BS problems require BS on the solution space.
-- [Capacity To Ship Packages Within D Days - leetcode 1011](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/1011.cpp)
-- [Nth Digit - leetcode 400](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/400.cpp)
+
+<br/>
+
+## ❓ Problems
+
+| Leetcode                                                                                                                   |
+| :------------------------------------------------------------------------------------------------------------------------- |
+| [Search in Rotated Sorted Array](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/33.cpp)            |
+| [Capacity To Ship Packages Within D Days](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/1011.cpp) |
+| [Nth Digit](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/400.cpp)                                |
+| [H-Index 2](https://github.com/eunnbi/algorithm/blob/main/binary%20search/leetcode/275.cpp)                                |
