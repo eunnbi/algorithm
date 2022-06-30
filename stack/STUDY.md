@@ -39,3 +39,13 @@ int pop(Stack* pstack){
 	return pstack->itmes[pstack->top--];
 }
 ```
+
+<br/>
+
+## ❓ Problems
+
+| Leetcode                                                                                         |
+| :----------------------------------------------------------------------------------------------- |
+| [Valid Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/20.cpp)         |
+| [Score of Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/856.cpp)     |
+| [Validate Stack Sequences](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/946.cpp) |
