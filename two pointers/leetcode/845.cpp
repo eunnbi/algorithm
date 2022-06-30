@@ -1,5 +1,4 @@
 int longestMountain(int* arr, int arrSize){
-
 	if (arrSize < 3) return 0;
 	int max = 0; // the length of the longest subarray
 
