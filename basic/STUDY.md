@@ -14,7 +14,7 @@
 | N≤ 10,000,000 | O(N)            |
 | 그 이상       | O(logN), O(1)   |
 
-👉 **Remember that `10,000 * 10,000` takes about one second.**
+🚀 **Remember that `10,000 * 10,000` takes about one second.**
 
 <br/>
 
@@ -35,7 +35,7 @@
 | unsigned | 0 ~ 255       | 0 ~ 65,535   | 0~약 42억       |
 | signed   | -128 ~ 127    | -32768~32767 | 약 -21억 ~ 21억 |
 
-👉 **`Integer Overflow` 주의!** Integer overflow가 발생하면 `int`형 대신 `long long` 형으로 선언
+🚀 **`Integer Overflow` 주의!** Integer overflow가 발생하면 `int`형 대신 `long long` 형으로 선언
 
 <br/>
 
