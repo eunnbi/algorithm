@@ -1,7 +1,8 @@
 # ✍️ Algorithm Study
 
-|                                    🧩 Data Structure and Algorithm                                |
+|                                   🧩 Data Structure and Algorithm                                   |
 | :-------------------------------------------------------------------------------------------------: |
+|                [Basic](https://github.com/eunnbi/algorithm/blob/main/basic/STUDY.md)                |
 |                                                Array                                                |
 |         [Linked List](https://github.com/eunnbi/algorithm/blob/main/linked%20list/STUDY.md)         |
 |                [Stack](https://github.com/eunnbi/algorithm/blob/main/stack/STUDY.md)                |
