@@ -127,3 +127,18 @@ for (int i = 0; i <= v1.size() - 1; i++){
 
 - `size` 메서드는 `unsigned int`형을 반환함.
 - v1이 빈 vector라면 `v1.size() - 1`의 결과는 `-1`이지만 `unsigned int` 형으로 해석하면 `UMAX`가 된다.
+
+<br/>
+
+## ❓ Problems
+
+| BOJ                                                                                                      |
+| :------------------------------------------------------------------------------------------------------- |
+| [윷놀이](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/2490.cpp)                               |
+| [방번호](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/1475.cpp)                               |
+| [두 수의 합](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/3273.cpp)                           |
+| [일곱 난쟁이](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/2309.cpp)                          |
+| [카드 역배치](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/10804.cpp)                         |
+| [방 배정](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/13300.cpp)                             |
+| [Strfry](https://github.com/eunnbi/algorithm/blob/main/array/BOJ/11328.cpp)                              |
+| [똬리배열](https://github.com/eunnbi/algorithm/blob/main/array/%EB%98%AC%EB%A6%AC%EB%B0%B0%EC%97%B4.cpp) |
