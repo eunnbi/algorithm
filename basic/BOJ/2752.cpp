@@ -28,11 +28,11 @@ int main(void){
 }
 
 /*
-📌 min, max 함수
+👉 min, max 함수
 - algorithm 헤더 파일에 구현되어 있는 함수이다.
 - {}을 이용하여 3개 이상의 값들에 대해 최소값, 최대값을 구할 수 있다.
 
-📌 minmax 함수
+👉 minmax 함수
 - pair<int, int> 타입 반환
 - first에는 최소값, second에는 최대값이 들어가 있다.
 */
