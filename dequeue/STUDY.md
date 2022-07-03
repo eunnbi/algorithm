@@ -83,3 +83,13 @@ int main(void){
 ```
 
 - [deque - C++ Reference](https://m.cplusplus.com/reference/deque/deque/)
+
+<br/>
+
+## ❓ Problems
+
+| BOJ                                                                               |
+| :-------------------------------------------------------------------------------- |
+| [덱](https://github.com/eunnbi/algorithm/blob/main/dequeue/BOJ/10866.cpp)         |
+| [회전하는 큐](https://github.com/eunnbi/algorithm/blob/main/dequeue/BOJ/1021.cpp) |
+| [AC](https://github.com/eunnbi/algorithm/blob/main/dequeue/BOJ/5430.cpp)          |
