@@ -4,6 +4,8 @@
     "vector": "cpp",
     "deque": "cpp",
     "stack": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "xiosbase": "cpp",
+    "random": "cpp"
   }
 }
