@@ -4,7 +4,7 @@
 
 <br/>
 
-## 성질
+## Features
 
 - `O(1)`에 k번째 원소를 확인 및 변경 가능
 - 추가적으로 소모되는 메모리의 양 (= `overhead`)가 거의 없음
@@ -13,7 +13,7 @@
 
 <br/>
 
-## 기능
+## Functions
 
 | 기능                                   | 시간복잡도 |
 | -------------------------------------- | ---------- |
@@ -25,7 +25,7 @@
 
 <br/>
 
-## 배열 초기화
+## Initialization
 
 ```cpp
 #include <cstring> // memset
@@ -104,7 +104,7 @@ int main(void) {
 
 <br/>
 
-### Vector 순회
+### Vector Traversal
 
 ```cpp
 vector<int> v1 = {1, 2, 3, 4, 5, 6};
