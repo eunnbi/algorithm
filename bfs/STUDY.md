@@ -64,3 +64,21 @@ int main(void){
 - 큐에 넣을 때 방문했다는 표시를 하는 대신 큐에서 빼낼 때 방문했다는 표시를 남긴다.
   ⇒ 같은 큐에 여러 번 들어가게 되면서 시간 초과나 메모리 초과가 발생
 - 이웃한 원소가 배열의 범위를 벗어났는지에 대한 체크를 잘못했다.
+
+<br/>
+
+## ❓ Problems
+
+| BOJ                                                                             |
+| ------------------------------------------------------------------------------- |
+| [그림](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1926.cpp)          |
+| [미로찾기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2178.cpp)      |
+| [토마토](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7576.cpp)        |
+| [불!](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/4179.cpp)           |
+| [숨바꼭질](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1697.cpps)     |
+| [유기농 배추](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1012.cpp)   |
+| [적록색약](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/10026.cpp)     |
+| [토마토](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7569.cpp)        |
+| [나이트의 이동](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7562.cpp) |
+| [불](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/5427.cpp)            |
+| [영역 구하기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2583.cpp)   |
