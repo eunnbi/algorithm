@@ -90,3 +90,12 @@ int main(void) {
 ```
 
 - [queue - C++ Reference](https://m.cplusplus.com/reference/queue/queue/)
+
+<br/>
+
+## ❓ Problems
+
+| BOJ                                                                               |
+| :-------------------------------------------------------------------------------- |
+| [큐](https://github.com/eunnbi/algorithm/blob/main/queue/BOJ/10845.cpp)           |
+| [요세푸스 문제](https://github.com/eunnbi/algorithm/blob/main/queue/BOJ/1158.cpp) |
