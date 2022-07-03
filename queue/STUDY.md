@@ -1,6 +1,14 @@
 # Queue
 
-👉 **FIFO (First In First Out)**
+👉 **FIFO (First In First Out)** : 가장 먼저 넣은 데이터가 가장 먼저 나온나는 것을 말한다.
+
+<br/>
+
+## Features
+
+- 원소의 추가/제거가 `O(1)`
+- 제일 앞과 뒤의 원소 확인이 `O(1)`
+- 제일 앞이 아닌 나머지 원소들의 변경이 불가능함.
 
 <br/>
 
@@ -55,3 +63,30 @@ int peek(Queue* pq){
     return pq->queue[pq->front];
 }
 ```
+
+<br/>
+
+## STL Queue
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void) {
+  queue<int> Q;
+  Q.push(10); // 10
+  Q.push(20); // 10 20
+  Q.push(30); // 10 20 30
+  cout << Q.size() << '\n'; // 3
+  if(Q.empty()) cout << "Q is empty\n";
+  else cout << "Q is not empty\n"; // Q is not empty
+  Q.pop(); // 20 30
+  cout << Q.front() << '\n'; // 20
+  cout << Q.back() << '\n'; // 30
+  Q.push(40); // 20 30 40
+  Q.pop(); // 30 40
+  cout << Q.front() << '\n'; // 30
+}
+```
+
+- [queue - C++ Reference](https://m.cplusplus.com/reference/queue/queue/)
