@@ -4,7 +4,7 @@
 
 <br/>
 
-## 성질
+## Features
 
 - `k`번째 원소를 확인/변경하기 위해 `O(k)`가 필요하다.
 - 임의의 위치에 원소를 추가하거나 제거할 때는 `O(1)`이 필요하다.
@@ -12,7 +12,7 @@
 
 <br/>
 
-## 종류
+## Type
 
 1. 단일 연결리스트 (Singly Linked List)
 2. 이중 연결리스트 (Doubly Linked List)
@@ -20,7 +20,7 @@
 
 <br/>
 
-## 배열 vs 연결리스트
+## Array vs Linked List
 
 배열과 연결리스트는 선형 자료구조이다.
 
@@ -33,7 +33,7 @@
 
 <br/>
 
-## 구현
+## Implementation
 
 ```cpp
 // Single Linked List
@@ -364,7 +364,7 @@ int main(void) {
 }
 ```
 
-- `push_back`, `pop_back`, `push_front`, `pop_front` → O(1)
+- `push_back`, `pop_back`, `push_front`, `pop_front` → `O(1)`
 - `iterator`가 `pointer` 역할을 한다.
 - [list - C++ Reference](https://m.cplusplus.com/reference/list/list/)
 
