@@ -82,8 +82,13 @@ int main(void) {
 
 ## ❓ Problems
 
-| Leetcode                                                                                         |
-| :----------------------------------------------------------------------------------------------- |
-| [Valid Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/20.cpp)         |
-| [Score of Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/856.cpp)     |
-| [Validate Stack Sequences](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/946.cpp) |
+| Leetcode                                                                                         | BOJ                                                                                  |
+| :----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Valid Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/20.cpp)         | [스택](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/10828.cpp)            |
+| [Score of Parentheses](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/856.cpp)     | [제로](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/10733.cpp)            |
+| [Validate Stack Sequences](https://github.com/eunnbi/algorithm/blob/main/stack/leetcode/946.cpp) | [스택 수열](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/1874.cpp)        |
+|                                                                                                  | [탑](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/2493.cpp)               |
+|                                                                                                  | [옥상 정원 꾸미기](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/6198.cpp) |
+|                                                                                                  | [오큰수](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/17298.cpp)          |
+|                                                                                                  | [쇠막대기](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/10799.cpp)        |
+|                                                                                                  | [괄호의 값](https://github.com/eunnbi/algorithm/blob/main/stack/BOJ/2504.cpp)        |
