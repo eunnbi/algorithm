@@ -9,7 +9,7 @@ int main(void) {
 	for (i = 0; i < N; i++) {
 		int eng[26] = { 0, }; // 변수 초기화 위치 중요!
 
-        cin >> a >> b;
+        	cin >> a >> b;
 		bool IsPossible = true;
 		for (j = 0; j < a.length(); j++) {
 			eng[a[j] - 'a']++;
