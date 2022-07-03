@@ -43,70 +43,70 @@
 typedef int Data;
 
 typedef struct _Node {
-	struct _Node* next;
-	Data data;
+  struct _Node* next;
+  Data data;
 } Node;
 
 typedef struct _LinkedList {
-	Node* head;
-	int num;
+  Node* head;
+  int num;
 } LinkedList;
 
 void InitList(LinkedList* plist) {
-	plist->head = (Node*)malloc(sizeof(Node)); // dummy node
-	plist->head->next = NULL;
-	plist->num = 0;
+  plist->head = (Node*)malloc(sizeof(Node)); // dummy node
+  plist->head->next = NULL;
+  plist->num = 0;
 }
 
 bool IsEmpty(LinkedList* plist) {
-	return (plist->num == 0);
+  return (plist->num == 0);
 }
 
 // Insert an item at the k-th position. (0 <= k <= plist->num)
 void Insert(LinkedList* plist, int pos, Data data) {
-	Node* cur = plist->head;
-	Node* newNode;
-	if (pos < 0 || pos > plist->num) {
-		exit(-1);
-	}
-	newNode = (Node*)malloc(sizeof(Node));
-	newNode->data = data;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	newNode->next = cur->next;
-	cur->next = newNode;
-	plist->num++;
+  Node* cur = plist->head;
+  Node* newNode;
+  if (pos < 0 || pos > plist->num) {
+    exit(-1);
+  }
+  newNode = (Node*)malloc(sizeof(Node));
+  newNode->data = data;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  newNode->next = cur->next;
+  cur->next = newNode;
+  plist->num++;
 }
 
 // Remove an item at the k-th position. (0 <= k < plist->num)
 void Remove(LinkedList* plist, int pos) {
-	Node* cur;
-	Node* delNode;
-	if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
-		exit(-1);
-	}
-	cur = plist->head;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	delNode = cur->next;
-	cur->next = delNode->next;
-	free(delNode);
-	plist->num--;
+  Node* cur;
+  Node* delNode;
+  if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
+    exit(-1);
+  }
+  cur = plist->head;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  delNode = cur->next;
+  cur->next = delNode->next;
+  free(delNode);
+  plist->num--;
 }
 
 // Read an item at the k-th position. (0 <= k < plist->num)
 Data ReadData(LinkedList* plist, int pos) {
-	Node* cur;
-	if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
-		exit(-1);
-	}
-	cur = plist->head->next;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	return cur->data;
+  Node* cur;
+  if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
+    exit(-1);
+  }
+  cur = plist->head->next;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  return cur->data;
 }
 ```
 
@@ -120,23 +120,22 @@ Data ReadData(LinkedList* plist, int pos) {
 typedef int Data;
 
 typedef struct _Node {
-	struct _Node* next;
-	Data data;
+  struct _Node* next;
+  Data data;
 } Node;
 
 typedef struct _CircularList {
-	Node* tail;
-	int num;
+  Node* tail;
+  int num;
 } CircularList;
 
 void InitList(CircularList* plist) {
-
-	plist->tail = NULL;
-	plist->num = 0;
+  plist->tail = NULL;
+  plist->num = 0;
 }
 
 bool IsEmpty(CircularList* plist) {
-	return (plist->num == 0);
+  return (plist->num == 0);
 }
 
 void InsertInitItem(CircularList* plist, Data data){
@@ -215,8 +214,8 @@ void RemoveLast(CircularList* plist){
 
 void RemoveMiddle(CircularList* plist, int pos) {
   if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
-		exit(-1);
-	}
+    exit(-1);
+  }
   else if (plist->len == 1) RemoveInitItem(plist);
   else if (pos == 0) RemoveFirst(plist);
   else if (pos == plist->num - 1) RemoveLast(plist);
@@ -236,15 +235,15 @@ void RemoveMiddle(CircularList* plist, int pos) {
 
 // Read an item at the k-th position. (0 <= k < plist->num)
 Data ReadItem(CircularList* plist, int pos) {
-	Node* cur;
-	if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
-		exit(-1);
-	}
-	cur = plist->tail->next;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	return cur->data;
+  Node* cur;
+  if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
+    exit(-1);
+  }
+  cur = plist->tail->next;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  return cur->data;
 }
 ```
 
@@ -258,9 +257,9 @@ Data ReadItem(CircularList* plist, int pos) {
 typedef int Data;
 
 typedef struct _Node {
-	struct _Node* next;
-    struct _Node* prev;
-	Data data;
+  struct _Node* next;
+  struct _Node* prev;
+  Data data;
 } Node;
 
 typedef struct _DoubleLinkedList {
@@ -281,59 +280,59 @@ void InitList(DoubleLinkedList* plist) {
 }
 
 bool IsEmpty(LinkedList* plist) {
-	return (plist->num == 0);
+  return (plist->num == 0);
 }
 
 // Insert an item at the k-th position. (0 <= k <= plist->num)
 void Insert(LinkedList* plist, int pos, Data data) {
-	Node* cur = plist->head;
-	Node* newNode;
-	if (pos < 0 || pos > plist->num) {
-		exit(-1);
-	}
-	newNode = (Node*)malloc(sizeof(Node));
-	newNode->data = data;
-    newNode->prev = NULL;
-    newNode->next = NULL;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-    newNode->prev = cur;
-	newNode->next = cur->next;
-	cur->next = newNode;
-    cur->next->prev=  newNode;
-	plist->num++;
+  Node* cur = plist->head;
+  Node* newNode;
+  if (pos < 0 || pos > plist->num) {
+    exit(-1);
+  }
+  newNode = (Node*)malloc(sizeof(Node));
+  newNode->data = data;
+  newNode->prev = NULL;
+  newNode->next = NULL;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  newNode->prev = cur;
+  newNode->next = cur->next;
+  cur->next = newNode;
+  cur->next->prev=  newNode;
+  plist->num++;
 }
 
 // Remove an item at the k-th position. (0 <= k < plist->num)
 void Remove(LinkedList* plist, int pos) {
-	Node* cur;
-	Node* delNode;
-	if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
-		exit(-1);
-	}
-	cur = plist->head;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	delNode = cur->next;
-    delNode->next->prev = cur;
-	cur->next = delNode->next;
-	free(delNode);
-	plist->num--;
+  Node* cur;
+  Node* delNode;
+  if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
+    exit(-1);
+  }
+  cur = plist->head;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  delNode = cur->next;
+  delNode->next->prev = cur;
+  cur->next = delNode->next;
+  free(delNode);
+  plist->num--;
 }
 
 // Read an item at the k-th position. (0 <= k < plist->num)
 Data ReadData(LinkedList* plist, int pos) {
-	Node* cur;
-	if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
-		exit(-1);
-	}
-	cur = plist->head->next;
-	for (int i = 0; i < pos; i++) {
-		cur = cur->next;
-	}
-	return cur->data;
+  Node* cur;
+  if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
+    exit(-1);
+  }
+  cur = plist->head->next;
+  for (int i = 0; i < pos; i++) {
+    cur = cur->next;
+  }
+  return cur->data;
 }
 ```
 
