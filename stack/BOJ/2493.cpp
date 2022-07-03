@@ -14,13 +14,11 @@ int main() {
   for (int i = 1; i <= N; i++) {
     int height; // 입력된 값 저장
     cin >> height;
-    if (tower.empty()) cout << "0 "; // 스택이 비어있다면 정답으로 출력될 값이 없다는 뜻이므로 0을 출력한다.
-    else {
-        // 스택이 비어있지 않다면, 입력된 값보다 작은 숫자들은 정답 가능성이 없으므로 제거한다.
-       while (!tower.empty() && tower.top().X < height) tower.pop();
-       if (tower.empty())  cout << "0 "; // 제거 이후에 스택이 비어있다면 0을 출력
-       else cout << tower.top().Y << " "; // 비어있지 않다면 top에 있는 값을 출력
-    }
+    
+    // 입력된 값보다 작은 숫자들은 정답 가능성이 없으므로 제거한다.
+    while (!tower.empty() && tower.top().X < height) tower.pop();
+    if (tower.empty())  cout << "0 "; // 스택이 비어있다면 0을 출력
+    else cout << tower.top().Y << " "; // 비어있지 않다면 top에 있는 값을 출력
     tower.push({height, i}); // 입력된 값과 인덱스는 스택에 저장한다.     
   }
   return 0;
