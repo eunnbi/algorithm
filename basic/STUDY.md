@@ -50,7 +50,7 @@
 
 <br/>
 
-## 함수 인자
+## Function Call
 
 1. `call by value`
    - argument의 상수값을 복사하여 전달
@@ -61,7 +61,7 @@
 
 <br/>
 
-## STL과 함수 인자
+## STL and Function call
 
 - STL를 함수 인자에 넣으면 복사되어 전달된다. => `call by value`
 - 복사본을 만드는데 비용이 발생한다.
