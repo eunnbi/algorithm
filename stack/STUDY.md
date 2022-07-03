@@ -1,6 +1,15 @@
 # Stack
 
-👉 **LIFO (Last In First Out)**
+👉 **LIFO (Last In First Out)** : 가장 마지막으로 들어간 데이터가 가장 먼저 나오는 것
+
+<br/>
+
+## Features
+
+- 원소의 추가가 O(1)
+- 원소의 제거가 O(1)
+- 제일 상단의 원소 확인이 O(1)
+- 제일 상단이 아닌 나머지 원소들의 확인 및 변경이 원칙적으로 불가능함.
 
 <br/>
 
@@ -39,6 +48,35 @@ int pop(Stack* pstack){
 	return pstack->itmes[pstack->top--];
 }
 ```
+
+<br/>
+
+## STL stack
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void) {
+  stack<int> S;
+  S.push(10); // 10
+  S.push(20); // 10 20
+  S.push(30); // 10 20 30
+  cout << S.size() << '\n'; // 3
+  if(S.empty()) cout << "S is empty\n";
+  else cout << "S is not empty\n"; // S is not empty
+  S.pop(); // 10 20
+  cout << S.top() << '\n'; // 20
+  S.pop(); // 10
+  cout << S.top() << '\n'; // 10
+  S.pop(); // empty
+  if(S.empty()) cout << "S is empty\n"; // S is empty
+  cout << S.top() << '\n'; // runtime error 발생 주의!!!!
+}
+```
+
+- Method: `push`, `pop`, `top`, `empty`, `size`
+- [stack - C++ Reference](https://m.cplusplus.com/reference/stack/stack/)
 
 <br/>
 
