@@ -386,8 +386,8 @@ int main(void) {
 
 ## ❓ Problems
 
-| Leetcode                                                                                                        |
-| :-------------------------------------------------------------------------------------------------------------- |
-| [Add Two Numbers](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/2.cpp)                   |
-| [Remove nth Node from End of List](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/19.cpp) |
-| [Merge k Sorted Lists](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/23.cpp)             |
+| Leetcode                                                                                                        | BOJ                                                                                |
+| :-------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [Add Two Numbers](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/2.cpp)                   | [에디터](https://github.com/eunnbi/algorithm/blob/main/linked%20list/BOJ/1406.cpp) |
+| [Remove nth Node from End of List](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/19.cpp) | [키로거](https://github.com/eunnbi/algorithm/blob/main/linked%20list/BOJ/5397.cpp) |
+| [Merge k Sorted Lists](https://github.com/eunnbi/algorithm/blob/main/linked%20list/leetcode/23.cpp)             |                                                                                    |
