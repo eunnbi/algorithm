@@ -20,6 +20,8 @@
     "xtree": "cpp",
     "xutility": "cpp",
     "utility": "cpp",
-    "ios": "cpp"
+    "ios": "cpp",
+    "chrono": "cpp",
+    "forward_list": "cpp"
   }
 }
