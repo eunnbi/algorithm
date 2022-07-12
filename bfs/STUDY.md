@@ -95,3 +95,7 @@ int main(void){
 | [숨바꼭질 4](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/13913.cpp)           |
 | [벽 부수고 이동하기 2](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/14442.cpp) |
 | [벽 부수고 이동하기 3](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/16933.cpp) |
+| [확장 게임](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/16920.cpp)            |
+| [불켜기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/11967.cpp)               |
+| [열쇠](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/9328.cpp)                  |
+| [백조의 호수](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/3197.cpp)           |
