@@ -17,3 +17,5 @@ int main(void){
     cout << sol(n, r, c);
     return 0;
 }
+
+// https://www.acmicpc.net/problem/1074
