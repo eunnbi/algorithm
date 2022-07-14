@@ -17,6 +17,8 @@ void sol(int x, int y, int n){
 
 int main(void){
     scanf("%d", &N);
+
+    // 🙌 초기화 필수!!
     for (int i = 0; i < N; i++){
         for (int j = 0; j < N; j++){
             res[i][j] = ' ';
