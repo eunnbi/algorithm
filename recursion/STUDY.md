@@ -198,6 +198,17 @@ int main(){
 
 <br/>
 
+## 💡 Tip
+
+1. **귀납적 사고 방식**
+   - ex) 1번 도미노가 쓰러진다. k번 도미노가 쓰러진다. k+1번 도미노도 쓰러진다.
+2. **함수의 형태 정의하기**: 인자, 반환값
+3. **base condition 정의하기**
+4. **재귀식 정의하기**
+   - `base condition`에 도달하도록 `problem` 사이즈는 작아져야 한다.
+
+<br/>
+
 ## ❓ Problems
 
 | Leetcode                                                                                                         | BOJ                                                                                         |
