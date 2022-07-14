@@ -200,14 +200,14 @@ int main(){
 
 ## ❓ Problems
 
-| Leetcode                                                                                                         |
-| :--------------------------------------------------------------------------------------------------------------- |
-| [Find K-th Bit in N-th Binary String](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1545.cpp) |
-| [Predict the Winner](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/486.cpp)                   |
-| [Sum of All Subset XOR Totals](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1863.cpp)        |
-| [Permutation Sequence](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/60.cpp)                  |
-| [Combinations](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/77.cpp)                          |
-| [Target Sum](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/494.cpp)                           |
-| [Letter Tile Possibilities](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1079.cpp)           |
-| [N-Queens 2](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/52.cpp)                            |
-| [Number of Ways of Cutting Pizza](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1444.cpp)     |
+| Leetcode                                                                                                         | BOJ                                                                                         |
+| :--------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Find K-th Bit in N-th Binary String](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1545.cpp) | [곱셈](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/1629.cpp)                |
+| [Predict the Winner](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/486.cpp)                   | [하노이 탑](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/11729.cpp)          |
+| [Sum of All Subset XOR Totals](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1863.cpp)        | [Z](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/1074.cpp)                   |
+| [Permutation Sequence](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/60.cpp)                  | [재귀함수가 뭔가요?](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/17478.cpp) |
+| [Combinations](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/77.cpp)                          | [종이의 개수](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/1780.cpp)         |
+| [Target Sum](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/494.cpp)                           | [색종이 만들기](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/2630.cpp)       |
+| [Letter Tile Possibilities](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1079.cpp)           | [쿼드트리](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/1992.cpp)            |
+| [N-Queens 2](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/52.cpp)                            | [별찍기 10](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/2447.cpp)           |
+| [Number of Ways of Cutting Pizza](https://github.com/eunnbi/algorithm/blob/main/recursion/leetcode/1444.cpp)     | [별찍기 11](https://github.com/eunnbi/algorithm/blob/main/recursion/BOJ/2448.cpp)           |
