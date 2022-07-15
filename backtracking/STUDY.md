@@ -7,7 +7,7 @@
 
 <br/>
 
-## STL next_permutation
+## 👀 STL next_permutation
 
 `next_permutation` 함수를 이용하여 순열과 조합을 쉽게 구할 수 있다.
 
