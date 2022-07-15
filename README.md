@@ -15,7 +15,7 @@
 |            [Two Pointers](https://github.com/eunnbi/algorithm/tree/main/two%20pointers)             |
 |              [Sorting](https://github.com/eunnbi/algorithm/blob/main/sorting/STUDY.md)              |
 | [Dynamic Programming](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/STUDY.md) |
-|                                            Backtracking                                             |
+|         [Backtracking](https://github.com/eunnbi/algorithm/blob/main/backtracking/STUDY.md)         |
 |                                             Simulation                                              |
 |                                               Greedy                                                |
 |                                           Priority Queue                                            |
