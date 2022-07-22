@@ -14,7 +14,7 @@ const int RED = 2;
 const int FLOWER = 3;
 
 
-// next_permutation을 위한 변수
+// ✨ next_permutation을 위한 변수
 int brute[10];  // candSize가 7, green = 1, red = 4일 때 { 0, 0, 1, 2, 2, 2, 2 }
 int sol() {
     int cnt = 0;
