@@ -16,6 +16,6 @@
 |              [Sorting](https://github.com/eunnbi/algorithm/blob/main/sorting/STUDY.md)              |
 | [Dynamic Programming](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/STUDY.md) |
 |         [Backtracking](https://github.com/eunnbi/algorithm/blob/main/backtracking/STUDY.md)         |
-|                                             Simulation                                              |
+|           [Simulation](https://github.com/eunnbi/algorithm/blob/main/simulation/STUDY.md)           |
 |                                               Greedy                                                |
 |                                           Priority Queue                                            |
