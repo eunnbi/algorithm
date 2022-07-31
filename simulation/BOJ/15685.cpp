@@ -41,3 +41,5 @@ int main(void) {
     printf("%d\n", cnt);
     return 0;
 }
+
+// https://www.acmicpc.net/problem/15685
