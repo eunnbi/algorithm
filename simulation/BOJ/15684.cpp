@@ -7,6 +7,7 @@ int res = MAX;
 // vis[i][j] : i번 세로선과 i+1번 세로선을 j번 가로선에서 연결되어 있다.
 bool ladder[11][30];
 
+// 사다리 타기
 bool ladderGame() {
     for (int i = 1; i <= N; i++) {
         int num = i;
@@ -50,3 +51,8 @@ int main(void) {
     printf("%d\n", res);
     return 0;
 }
+
+
+// 놓을 수 있는 모든 가로선을 다 놓아보면서 최소값을 갱신해 나가야 하는 완전탐색 문제
+// 사다리 연결 정보(가로선)를 활용하는 것이 중요!!
+// https://www.acmicpc.net/problem/15684
