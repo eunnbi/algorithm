@@ -18,10 +18,10 @@
 ## 👟 Step for Solving DP problems
 
 1. Check if the problem is a DP problem
-2. **Define a subproblem**
-3. **Define base cases**
+2. **Define a subproblem** (테이블 정의하기)
+3. **Define base cases** (초기값 정하기)
 4. **Define the answer case**
-5. Identify the **recurrence** that relates subproblems
+5. Identify the **recurrence** that relates subproblems (점화식 찾기)
 
 ### Smells of DP
 
