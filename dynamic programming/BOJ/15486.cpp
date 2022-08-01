@@ -23,3 +23,5 @@ int main(void) {
 	cout << *max_element(dp + 1, dp + N + 1);
 	return 0;
 }
+
+// https://www.acmicpc.net/problem/15486
