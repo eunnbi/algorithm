@@ -22,5 +22,4 @@ int main(void) {
     cout << dp[len1][len2];
     return 0;
 }
-
 // https://www.acmicpc.net/problem/9251
