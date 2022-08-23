@@ -156,6 +156,12 @@ int search(int arr[], int l, int r, int target){
 
 <br/>
 
+## STL
+
+- `binary_search(arr, arr + N, target)` : 1 or 0 반환
+- `upper_bound(arr, arr + N, target)` : iterator 반환
+- `lower_bound(arr, arr + N, target)` : iterator 반환
+
 ## ❓ Problems
 
 | Leetcode                                                                                                                   |
