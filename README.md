@@ -19,3 +19,9 @@
 |           [Simulation](https://github.com/eunnbi/algorithm/blob/main/simulation/STUDY.md)           |
 |                                               Greedy                                                |
 |                                           Priority Queue                                            |
+
+
+<br/>
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=jenabill)](https://solved.ac/jenabill)
