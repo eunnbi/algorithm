@@ -1,5 +1,8 @@
 # ✍️ Algorithm Study
 
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=jenabill)](https://solved.ac/jenabill)
+
 |                                   🧩 Data Structure and Algorithm                                   |
 | :-------------------------------------------------------------------------------------------------: |
 |                [Basic](https://github.com/eunnbi/algorithm/blob/main/basic/STUDY.md)                |
@@ -19,9 +22,3 @@
 |           [Simulation](https://github.com/eunnbi/algorithm/blob/main/simulation/STUDY.md)           |
 |                                               Greedy                                                |
 |                                           Priority Queue                                            |
-
-
-<br/>
-
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=jenabill)](https://solved.ac/jenabill)
