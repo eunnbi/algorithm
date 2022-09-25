@@ -23,6 +23,6 @@ int main(void) {
 			}
 		}
 	}
-	cout << *max_element(dp + 1, dp + N);
+	cout << *max_element(dp + 1, dp + N + 1);
 	return 0;
 }
