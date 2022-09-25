@@ -4,6 +4,9 @@ using namespace std;
 int T, N;
 int stickers[2][100003];
 int dp[2][100003];
+// dp[i][j]: i행 j열 스티커를 붙일 때 스티커 점수의 최대값
+// dp[0][j] = max({ dp[1][j - 1], dp[0][j - 2], dp[1][j - 2] }) + stickers[0][j];
+// dp[1][j] = max({ dp[0][j - 1], dp[0][j - 2], dp[1][j - 2] }) + stickers[1][j];
 
 int main(void) {
 	ios::sync_with_stdio(0);
