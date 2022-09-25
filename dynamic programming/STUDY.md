@@ -180,6 +180,44 @@ int main(){
 <br/>
 
 ### 4. Knapsack Problem
+- 배낭 문제는 dp에서 유명한 문제이다.
+- 어떤 배낭이 있고 그 배낭안에 넣을 수 있는 최대 무게가 K라고 하자. 배낭에 넣을 수 있는 N개의 물건이 각기 다른 가치 V를 가지고 있고 각 물건마다 다른 무게 W를 가지고 있을 때, 배낭이 최대한 가치가 높은 물건들을 담을 수 있는 조합을 찾는 문제이다.
+- Fractional Knapsack 문제와 0-1 Knapsack 문제가 있다.
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int N, K;
+int dp[101][100001];
+int w[101];
+int v[101];
+
+int main(void) {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	cin >> N >> K;
+	for (int i = 1; i <= N; i++) {
+		cin >> w[i] >> v[i];
+	}
+
+	for (int i = 1; i <= N; i++) {
+		for (int j = 1; j <= K; j++) {
+			if ((j - w[i]) >= 0) {
+				// i번째 물건을 넣는 경우 : dp[i][j - w[i]] + v[i]
+				// i번째 물건을 넣지 않는 경우 : dp[i - 1][j]
+				dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w[i]] + v[i]);
+			}
+			else {
+				dp[i][j] = dp[i - 1][j];
+			}
+		}
+	}
+	cout << dp[N][K];
+	return 0;
+}
+```
+
 
 <br/>
 
