@@ -1,27 +1,28 @@
 #include <bits/stdc++.h>
-#define MAX 1001
 using namespace std;
 
 int N;
-int nums[MAX];
-int dp[MAX];
+int a[1001];
+int dp[1001];
 
 int main(void) {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
 	cin >> N;
 	for (int i = 1; i <= N; i++) {
-		cin >> nums[i];
-		dp[i] = nums[i];
+		cin >> a[i];
 	}
-	for (int i = 1; i <= N; i++) {
-		int mx = dp[i];
+
+	dp[1] = a[1];
+	for (int i = 2; i <= N; i++) {
+		dp[i] = a[i];
 		for (int j = 1; j < i; j++) {
-			if (nums[i] <= nums[j]) continue;
-			if (mx < dp[i] + dp[j]) {
-				mx = dp[i] + dp[j];
+			if (a[j] < a[i]) {
+				dp[i] = max(dp[i], dp[j] + a[i]);
 			}
 		}
-		dp[i] = mx;
 	}
-	cout << *max_element(dp + 1, dp + N + 1);
+	cout << *max_element(dp + 1, dp + N);
 	return 0;
 }
