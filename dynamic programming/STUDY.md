@@ -179,6 +179,10 @@ int main(){
 
 <br/>
 
+### 4. Knapsack Problem
+
+<br/>
+
 ## ❓ Problems
 
 | Leetcode                                                                                                                |
