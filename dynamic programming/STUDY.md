@@ -180,9 +180,11 @@ int main(){
 <br/>
 
 ### 4. Knapsack Problem
+
 - 배낭 문제는 dp에서 유명한 문제이다.
 - 어떤 배낭이 있고 그 배낭안에 넣을 수 있는 최대 무게가 K라고 하자. 배낭에 넣을 수 있는 N개의 물건이 각기 다른 가치 V를 가지고 있고 각 물건마다 다른 무게 W를 가지고 있을 때, 배낭이 최대한 가치가 높은 물건들을 담을 수 있는 조합을 찾는 문제이다.
 - Fractional Knapsack 문제와 0-1 Knapsack 문제가 있다.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -217,19 +219,3 @@ int main(void) {
 	return 0;
 }
 ```
-
-
-<br/>
-
-## ❓ Problems
-
-| Leetcode                                                                                                                |
-| :---------------------------------------------------------------------------------------------------------------------- |
-| [Longest Increasing Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/300.cpp)  |
-| [Longest Common Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/1143.cpp)     |
-| [Longest Palindromic Subsequence](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/516.cpp) |
-| [Partition Equal Subset Sum](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/416.cpp)      |
-| [Wildcard Matching](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/44.cpp)                |
-| [Edit Distance](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/72.cpp)                    |
-| [Perfect Squares](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/279.cpp)                 |
-| [Burst Balloons](https://github.com/eunnbi/algorithm/blob/main/dynamic%20programming/leetcode/312.cpp)                  |
