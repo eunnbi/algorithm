@@ -1,7 +1,6 @@
 # ✍️ Algorithm Study
 
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=jenabill)](https://solved.ac/jenabill)
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=jenabill)](https://solved.ac/jenabill)
 
 |                                   🧩 Data Structure and Algorithm                                   |
 | :-------------------------------------------------------------------------------------------------: |
