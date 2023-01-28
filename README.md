@@ -20,4 +20,11 @@
 |         [Backtracking](https://github.com/eunnbi/algorithm/blob/main/backtracking/STUDY.md)         |
 |           [Simulation](https://github.com/eunnbi/algorithm/blob/main/simulation/STUDY.md)           |
 |                                               Greedy                                                |
+|                                                Hash                                                 |
+|                                         Binary Search Tree                                          |
 |                                           Priority Queue                                            |
+|                                                Graph                                                |
+|                                                Tree                                                 |
+|                                          Topological Sort                                           |
+|                                                 MST                                                 |
+|                                            Shortest Path                                            |
