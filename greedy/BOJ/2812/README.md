@@ -68,7 +68,8 @@ int main() {
         res.push_back(s[i] - '0');
     }
 
-    while (num < n - k_copy) {  // ⚠️ 최종 출력될 숫자가 "n - k"자리여야 함.
+    // ⚠️ 최종 출력될 숫자가 "n - k" 자리여야 함.  본래의 k의 값이 앞선 for문에서 수정되기 때문에 복사본 이용
+    while (num < n - k_copy) {  
         num++;
         cout << res.front();
         res.pop_front();
