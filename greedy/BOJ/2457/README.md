@@ -32,7 +32,7 @@ int main() {
                 res = 0;
                 break;
             }
-            else { // 현재 피어 있는 꽃들 중 가장 오래 피는 꽃이 있는 경우
+            else { // 현재 피어 있는 꽃이 있는 경우
                 res++;
                 now = mx;
                 mx = 0;
