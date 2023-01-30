@@ -17,7 +17,7 @@ int main() {
         s[i].first = a * 100 + b;
         s[i].second = c * 100 + d;
     }
-    sort(s, s + n); // 꽃이 피는 순서대로 정렬
+    sort(s, s + n); // 꽃이 피는 순서대로 정렬, 꽃이 피는 시간이 같다면 지는 순대로 정렬
     for (int i = 0; i < n; i++) {
         if (now > 1130) break;
 
