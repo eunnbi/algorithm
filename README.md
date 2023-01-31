@@ -22,7 +22,7 @@
 |               [Greedy](https://github.com/eunnbi/algorithm/tree/main/greedy)               |
 |                                            Hash                                            |
 |                                     Binary Search Tree                                     |
-|                                       Priority Queue                                       |
+|      [Priority Queue](https://github.com/eunnbi/algorithm/tree/main/priority%20queue)      |
 |                                           Graph                                            |
 |                                            Tree                                            |
 |                                      Topological Sort                                      |
