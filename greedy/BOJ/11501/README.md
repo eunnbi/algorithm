@@ -74,3 +74,5 @@ int main() {
     }
 }
 ```
+
+> [문제 보러가기](https://www.acmicpc.net/problem/11501)
