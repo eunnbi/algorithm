@@ -21,6 +21,7 @@ int main(void) {
         cin >> trees[i];
     }
 
+    // ⚠️ integer overflow 주의!!
     long long left = 1;
     long long right = *max_element(trees, trees + N);
     long long mid, res = 0;

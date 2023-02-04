@@ -1,37 +1,35 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int M, N;
-long long snack[1000001];
-
-bool isPossible(long long x) {
-    long long sum = 0;
-    for (int i = 0; i < N; i++) {
-        sum += snack[i] / x;
-    }
-    return sum >= M;
-}
-
+int a[1000001];
 int main(void) {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    cin >> M >> N;
-    for (int i = 0; i < N; i++) {
-        cin >> snack[i];
+    
+    int n, m;
+    cin >> m >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
-
-    long long left = 1;
-    long long right = *max_element(snack, snack + N);
-    long long mid, res = 0;
-    while (left <= right) {
-        mid = left + (right - left) / 2;
-        if (isPossible(mid)) {
+    
+    int res = 0;
+    int l = 1;
+    int r = 1000000000;
+    long long mid;
+    int cnt = 0;
+    while (l <= r) {
+        mid = l + (r - l) / 2;
+        cnt = 0;
+        for (int i = 0; i < n; i++) {
+            cnt += a[i] / mid;
+        }
+        if (cnt >= m) {
             res = mid;
-            left = mid + 1;
+            l = mid + 1;
         }
-        else {
-            right = mid - 1;
-        }
+        else r = mid - 1;
+        
     }
-    cout << res;
+    cout << res << '\n';
+    return 0;
 }

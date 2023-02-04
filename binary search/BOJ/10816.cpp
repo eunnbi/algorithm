@@ -1,67 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int N, M;
-int nums[500001];
+int n, m;
+int a[500001];
 
-int search_first(int target) {
-    int left = 0;
-    int right = N - 1;
-    int mid, res = -1;
-    while (left <= right) {
-        mid = left + (right - left) / 2;
-        if (nums[mid] == target) {
-            res = mid;
-            right = mid - 1;
-        }
-        else if (nums[mid] < target) {
-            left = mid + 1;
-        }
-        else {
-            right = mid - 1;
-        }
-    }
-    return res;
-}
-
-int search_last(int target) {
-    int left = 0;
-    int right = N - 1;
-    int mid, res = -1;
-    while (left <= right) {
-        mid = left + (right - left) / 2;
-        if (nums[mid] == target) {
-            res = mid;
-            left = mid + 1;
-        }
-        else if (nums[mid] < target) {
-            left = mid + 1;
-        }
-        else {
-            right = mid - 1;
-        }
-    }
-    return res;
-}
-
-int main(void) {
+int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    cin >> N;
-    for (int i = 0; i < N; i++) {
-        cin >> nums[i];
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
-    sort(nums, nums + N);
-
-    cin >> M;
-    int num;
-    while (M--) {
+    sort(a, a + n);
+    cin >> m;
+    while (m--) {
+        int num;
         cin >> num;
-        //  cout << upper_bound(nums, nums + N, num) - lower_bound(nums, nums + N, num) << ' ';
-        int last = search_last(num);
-        int first = search_first(num);
-        if (last == -1) cout << 0 << ' ';
-        else cout << last - first + 1 << ' ';
+        cout << upper_bound(a, a + n, num) - lower_bound(a, a + n, num) << ' ';
     }
     return 0;
 }
