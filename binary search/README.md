@@ -159,8 +159,8 @@ int search(int arr[], int l, int r, int target){
 ## STL
 
 - `binary_search(arr, arr + N, target)` : 1 or 0 반환
-- `upper_bound(arr, arr + N, target)` : 찾으려는 key값보다 같거나 큰 숫자가 배열 몇 번째에서 처음 등장하는지 찾는데 사용된다. iterator 반환
-- `lower_bound(arr, arr + N, target)` : 찾으려는 key값보다 큰 숫자가 배열 몇 번째에서 처음 등장하는지 찾는데 사용된다. iterator 반환
+- `upper_bound(arr, arr + N, target)` : 찾으려는 key값보다 크면서 가장 작은 값이 배열 몇 번째에서 처음 등장하는지 찾는데 사용된다. iterator 반환
+- `lower_bound(arr, arr + N, target)` : 찾으려는 key값보다 크거나 같으면서 가장 작은 값이 배열 몇 번째에서 처음 등장하는지 찾는데 사용된다. iterator 반환
 
 ## ❓ Problems
 
