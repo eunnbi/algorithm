@@ -1,52 +1,52 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 using namespace std;
 
-int T, n, m;
 int a[1001];
 int b[1001];
-int prefixA[1001];
-int prefixB[1001];
-long long res; // 주의: long long 형으로 선언해야 함!!
-
-int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-
-	cin >> T;
-	cin >> n;
-	for (int i = 1; i <= n; i++) {
-		cin >> a[i];
-		prefixA[i] = prefixA[i - 1] + a[i];
-	}
-
-	cin >> m;
-	for (int i = 1; i <= m; i++) {
-		cin >> b[i];
-		prefixB[i] = prefixB[i - 1] + b[i];
-	}
-
-	vector<int> bruteA;
-	vector<int> bruteB;
-	for (int i = 0; i <= n; i++) {
-		for (int j = i + 1; j <= n; j++) {
-			bruteA.push_back(prefixA[j] - prefixA[i]);
-		}
-	}
-
-	for (int i = 0; i < m; i++) {
-		for (int j = i + 1; j <= m; j++) {
-			bruteB.push_back(prefixB[j] - prefixB[i]);
-		}
-	}
-	sort(bruteA.begin(), bruteA.end());
-
-	for (int i = 0; i < bruteB.size(); i++) {
-        // 찾으려는 원소의 개수를 구하는 방볍!!
-		res += upper_bound(bruteA.begin(), bruteA.end(), T - bruteB[i]) - lower_bound(bruteA.begin(), bruteA.end(), T - bruteB[i]);
-	}
-	cout << res << '\n';
-	return 0;
+vector<int> sumA;
+vector<int> sumB;
+int main() {
+    int t, n, m;
+    cin >> t;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cin >> m;
+    for (int i = 0; i < m; i++) {
+        cin >> b[i];
+    }
+    
+    for (int i = 0; i < n; i++) {
+        sumA.push_back(a[i]);
+        int sum = a[i];
+        for (int j = i + 1; j < n; j++) {
+            sum += a[j];
+            sumA.push_back(sum);
+        }
+    }
+     for (int i = 0; i < m; i++) {
+        sumB.push_back(b[i]);
+        int sum = b[i];
+        for (int j = i + 1; j < m; j++) {
+            sum += b[j];
+            sumB.push_back(sum);
+        }
+    }
+    sort(sumA.begin(), sumA.end());
+    long long res = 0; // ⚠️ integer overflow 주의!!
+    for (int val: sumB) {
+        int target = t - val;
+        int u = upper_bound(sumA.begin(), sumA.end(), target) - sumA.begin();
+        int l = lower_bound(sumA.begin(), sumA.end(), target) - sumA.begin();
+        res += (u - l);
+    }
+    cout << res << '\n';
+    return 0;
 }
+
 
 // Prefix Sum + Binary Search
 // https://www.acmicpc.net/problem/2143
