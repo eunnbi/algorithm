@@ -52,6 +52,26 @@ void selectionSort(int arr[], int n){
 
 <br/>
 
+## Insertion Sort
+
+```cpp
+void insertionSort(int arr[], int n) {
+	int i, j, key;
+	for (int i = 1; i < n; i++) {
+		key = a[i];
+		for (int j = i - 1; j >= 0; j--) {
+			if (list[j] > key) {
+				list[j + 1] = list[j];
+			}
+			else break;
+		}
+		list[j + 1] = key;
+	}
+}
+```
+
+<br/>
+
 ## Merge Sort vs Quick Sort vs Heap Sort
 
 Time complexity : `O(NlogN)`
@@ -109,6 +129,34 @@ void mergeSort(int arr[], int left, int right){
 
 <br/>
 
+```cpp
+// Quick Sort
+int partition(int a[], int left, int right) {
+	int pivot = a[left];
+	int low = left + 1, high = right;
+	while (true) {
+		while (low < right && a[low] < pivot) low++;
+		while (high > left && a[high] >= pivot) high--;
+		if (low < high) {
+			swap(a[low], a[high]);
+		}
+		else break;
+	}
+	swap(a[left], a[high]);
+	return high;
+}
+
+void quickSort(int a[], int left, int right) {
+	if (left < right) {
+		int mid = partition(a, left, right);
+		quickSort(a, left, mid - 1);
+		quickSort(a, mid + 1, right);
+	}
+}
+```
+
+<br/>
+
 ## Counting Sort
 
 - Efficient when the distribution of numbers is **dense**
@@ -128,7 +176,7 @@ void countingSort(int arr[], int n){
 	}
 }
 
-// Time complexity: O(N+K)
+// Time complexity: O(N+K) (K is the maximum of elements)
 // Space complexity: O(N)
 ```
 
