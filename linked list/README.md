@@ -99,7 +99,7 @@ void Remove(LinkedList* plist, int pos) {
 // Read an item at the k-th position. (0 <= k < plist->num)
 Data ReadData(LinkedList* plist, int pos) {
   Node* cur;
-  if (IsEmpty(plist) || pos > 0 || pos >= plist->num) {
+  if (IsEmpty(plist) || pos < 0 || pos >= plist->num) {
     exit(-1);
   }
   cur = plist->head->next;
