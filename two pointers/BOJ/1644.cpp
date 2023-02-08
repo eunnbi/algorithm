@@ -1,50 +1,37 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int N;
-int res;
-bool isPrime[4000001];
-vector<int> prime;
+int a[4000002];
+vector<int> nums;
 
-int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-
-	cin >> N;
-	
-	for (int i = 2; i <= N; i++) {
-		isPrime[i] = true;
-	}
-
-	for (int i = 2; i <= N; i++) {
-		if (isPrime[i]) {
-			prime.push_back(i);
-			for (int j = 2 * i; j <= N; j += i) {
-				isPrime[j] = false;
-			}
-		}
-	}
-
-	if (prime.size() == 0) {
-		cout << 0;
-		return 0;
-	}
-	
-	int left = 0, right = 0;
-	int sum = prime[right];
-	int size = prime.size();
-	while (left < size && right < size) {
-		if (sum == N) {
-			res++;
-			sum -= prime[left++];
-		}
-		else if (sum < N && (right != size - 1)) {
-			sum += prime[++right];
-		}
-		else {
-			sum -= prime[left++];
-		}
-	}
-	cout << res;
-	return 0;
+int main() {
+    int n;
+    cin >> n;
+    
+	// 💡 에라토스테네스의 체 이용
+    for (int i = 2; i <= n; i++) {
+        a[i] = i;
+    }
+    for (int i = 2; i <= n; i++) {
+        if (a[i] == 0) continue;
+        for (int j = 2*i; j <= n; j += i) a[j] = 0;
+        nums.push_back(i);
+    }
+    
+    int res = 0;
+    int i = 0;
+    int j = 0;
+    int size = nums.size();
+    int sum = nums.empty() ? 0 : nums[0];
+    while (i <= j && j < size) {
+        if (sum < n) sum += nums[++j];
+        else if (sum > n) sum -= nums[i++];
+        else {
+            res++;
+            sum -= nums[i++];
+        }
+    }
+    cout << res;
+    return 0;
 }

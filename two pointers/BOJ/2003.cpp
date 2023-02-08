@@ -1,34 +1,28 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int N, M;
-int nums[10001];
-int res;
+int a[10003];
 
-int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-
-	cin >> N >> M;
-	for (int i = 0; i < N; i++) {
-		cin >> nums[i];
-	}
-
-	int sum = 0;
-	int left = 0, right = 0;
-	sum += nums[right];
-	while (left < N && right < N) {
-		if (sum == M) {
-			res++;
-			sum -= nums[left++];
-		}
-		else if (sum > M) {
-			sum -= nums[left++];
-		}
-		else {
-			sum += nums[++right];
-		}
-	}
-	cout << res;
-	return 0;
+int main() {
+    int n, m;
+    cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    
+    int res = 0;
+    int i = 0;
+    int j = 0;
+    int sum = a[0];
+    while (i < n && j < n) {
+        if (i > j) sum += a[++j];
+        if (sum < m) sum += a[++j];
+        else if (sum > m) sum -= a[i++];
+        else {
+            res++;
+            sum -= a[i++];
+        }
+    }
+    cout << res;
+    return 0;
 }

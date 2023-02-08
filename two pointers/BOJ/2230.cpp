@@ -1,28 +1,27 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int N, M;
-int nums[100001];
-int mn;
+int a[100001];
 
-int main(void) {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
-	cin >> N >> M;
-	for (int i = 0; i < N; i++) {
-		cin >> nums[i];
-	}
-	mn = INT_MAX;
-	sort(nums, nums + N);
-	int left = 0, right = 1;
-	while (left < N && right < N) {
-		int sub = nums[right] - nums[left];
-		if (sub < M) right++;
-		else {
-			if (sub < mn) mn = sub;
-			left++;
-		}
-	}
-	cout << mn;
-	return 0;
+int main() {
+    int n, m;
+    cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    
+    int mn = 2000000001;
+    sort(a, a + n);
+    int i = 0;
+    int j = 0;
+    while (i <= j && j < n) {
+       if (a[j] - a[i] >= m) {
+            mn = min(mn, a[j] - a[i]);
+            i++;
+        }
+        else j++;
+    }
+    cout << mn;
+    return 0;
 }
