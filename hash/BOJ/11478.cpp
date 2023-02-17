@@ -15,8 +15,6 @@ int main() {
             a.insert(substr);
         }
     }
-    long long res = 0;
-    for (auto val: a) res++;
-    cout << res << '\n';
+    cout << a.size() << '\n';
     return 0;
 }
