@@ -20,8 +20,8 @@
 |         [Backtracking](https://github.com/eunnbi/algorithm/tree/main/backtracking)         |
 |           [Simulation](https://github.com/eunnbi/algorithm/tree/main/simulation)           |
 |               [Greedy](https://github.com/eunnbi/algorithm/tree/main/greedy)               |
-|                                            Hash                                            |
-|                                     Binary Search Tree                                     |
+|                 [Hash](https://github.com/eunnbi/algorithm/tree/main/hash)                 |
+| [Binary Search Tree](https://github.com/eunnbi/algorithm/tree/main/binary%20search%20tree) |
 |      [Priority Queue](https://github.com/eunnbi/algorithm/tree/main/priority%20queue)      |
 |                                           Graph                                            |
 |                                            Tree                                            |
