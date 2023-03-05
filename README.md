@@ -23,8 +23,8 @@
 |                 [Hash](https://github.com/eunnbi/algorithm/tree/main/hash)                 |
 | [Binary Search Tree](https://github.com/eunnbi/algorithm/tree/main/binary%20search%20tree) |
 |      [Priority Queue](https://github.com/eunnbi/algorithm/tree/main/priority%20queue)      |
-|                                           Graph                                            |
-|                                            Tree                                            |
+|                [Graph](https://github.com/eunnbi/algorithm/tree/main/graph)                |
+|                 [Tree](https://github.com/eunnbi/algorithm/tree/main/tree)                 |
 |                                      Topological Sort                                      |
 |                                            MST                                             |
 |                                       Shortest Path                                        |
