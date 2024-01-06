@@ -20,7 +20,6 @@
 - `What` 이전에 풀어본 문제와 유사한 지를 바탕으로 풀이를 설계하는 전략
 - 상당한 양의 연습이 필요한 전략 → 소위 Well-known 유형들에 대한 문제 풀이를 우선적으로 공부한다.
 
-<br/>
 
 ## 시간복잡도
 
@@ -38,18 +37,15 @@
 
 🚀 **Remember that `10,000 * 10,000` takes about one second.**
 
-<br/>
 
 ## 공간복잡도
 
 - 512MB = 1.2억 개의 int 형
 - 사이즈가 큰 변수는 전역 변수로 선언
 
-<br/>
-
 ## 데이터 타입
 
-**char, short, int**
+### char, short, int
 
 |          | char형        | short형      | int형           |
 | -------- | ------------- | ------------ | --------------- |
@@ -59,9 +55,7 @@
 
 🚀 **`Integer Overflow` 주의!** Integer overflow가 발생하면 `int`형 대신 `long long` 형으로 선언
 
-<br/>
-
-**float, double**
+### float, double
 
 - 실수의 저장 및 연산 과정에서 오차가 발생할 수 있다.
   - 가수부의 bit 수 제한 → 유효 자릿수 존재
@@ -70,9 +64,8 @@
 - 실수를 비교할 때 등호를 사용해선 안된다. 등호 대신 부등호를 이용한다.
   - abs(a-b) < 1e-12 → a와 b는 동일한 값으로 판단
 
-<br/>
 
-## Function Call
+## 함수 호출
 
 1. `call by value`
    - argument의 상수값을 복사하여 전달
@@ -81,9 +74,8 @@
    - argument의 시작주소 전달
    - 함수 내부에서 원본 수정 가능
 
-<br/>
 
-## STL and Function call
+## STL과 함수 호출
 
 - STL를 함수 인자에 넣으면 복사되어 전달된다. => `call by value`
 - 복사본을 만드는데 비용이 발생한다.
