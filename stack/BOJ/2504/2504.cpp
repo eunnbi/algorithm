@@ -78,6 +78,3 @@ int main(void) {
     cout << sum;
     return 0;
 }
-
-// leetcode 856 문제 풀이 응용 (올바르지 않은 괄호쌍 체크하는 분기 추가)
-// https://www.acmicpc.net/problem/2504
