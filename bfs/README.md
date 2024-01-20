@@ -1,101 +1,53 @@
 # Breadth First Search
 
-> 다차원 배열에서 각 원소에 접근할 때 **너비를 우선으로** 접근하는 알고리즘
+## BFS 정의
 
-<br/>
+다차원 배열에서 각 칸을 방문할 때 너비를 우선으로 방문하는 알고리즘
 
-## Implementation
+## 구현 방법
 
 1. 시작하는 칸을 **큐**에 넣고 방문했다는 표시를 남김
-2. 큐에서 원소를 꺼내어 그 칸에 상하좌우로 인접한 칸에 대해 `3`번을 진행
+2. 큐에서 원소를 꺼내어 그 칸에 상하좌우로 인접한 칸에 대해 3번을 진행
 3. 해당 칸을 이전에 방문했다면 pass, 처음으로 방문했다면 방문했다는 표시를 남기고 해당 칸을 큐에 삽입
-4. 큐가 빌 때까지 `2`번 반복
+4. 큐가 빌 때까지 2번 반복
 
-💛 모든 칸이 큐에 1번씩 들어가므로 시간 복잡도는 O(N) (N : 배열의 크기)
+### 파이썬 코드
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
+```python
+from collections import deque
 
-// pair에서 first, second를 줄여서 쓰기 위해서 사용
-#define X first
-#define Y second
+n, m = map(int, input.split())
 
-int board[502][502] =
-{{1,1,1,0,1,0,0,0,0,0}, // 1이 파란 칸, 0이 빨간 칸에 대응
- {1,0,0,0,1,0,0,0,0,0},
- {1,1,1,0,1,0,0,0,0,0},
- {1,1,0,0,1,0,0,0,0,0},
- {0,1,0,0,0,0,0,0,0,0},
- {0,0,0,0,0,0,0,0,0,0},
- {0,0,0,0,0,0,0,0,0,0} };
+dx = [-1, 1, 0, 0]
+dy = [0, 0, 1, -1]
 
-bool vis[502][502]; // 해당 칸을 방문했는지 여부를 저장
-int n = 7, m = 10; // n = 행의 수, m = 열의 수
-int dx[4] = {1,0,-1,0}; // 상하좌우 네 방향을 의미
-int dy[4] = {0,1,0,-1};
+visited = [[-1] * m for _ in range(n)]
 
-int main(void){
-  ios::sync_with_stdio(0);
-  cin.tie(0);
-  queue<pair<int,int> > Q;
-  Q.push({0,0}); // 큐에 시작점인 (0, 0)을 삽입
-  vis[0][0] = 1; // (0, 0)을 방문했다고 명시
-  while(!Q.empty()){
-    pair<int,int> cur = Q.front(); Q.pop();
-    cout << '(' << cur.X << ", " << cur.Y << ") -> ";
-    for(int dir = 0; dir < 4; dir++){ // 상하좌우 칸을 살펴볼 것이다.
-      int nx = cur.X + dx[dir];
-      int ny = cur.Y + dy[dir];
-      if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue; // 배열의 범위 밖일 경우
-      if(vis[nx][ny] || board[nx][ny] != 1) continue; // 이미 방문한 칸이거나 파란 칸이 아닐 경우
-      vis[nx][ny] = 1; // (nx, ny)를 방문했다고 명시
-      Q.push({nx,ny});
-    }
-  }
-}
+def bfs(matrix):
+	queue = deque([0, 0])
+	visited[0][0] = 1
+	
+	while queue:
+		x, y = queue.popleft()
+		for i in range(4):
+			nx, ny = x + dx[i], y + dy[i]
+			if (nx < 0 or nx >= n or ny < 0 or ny >= m):
+				continue
+			if (visited[nx][ny] != -1 or matrix[nx][ny] != 1):
+				continue
+			queue.append([nx, ny])
+			visited[nx][ny] = visited[x][y] + 1
 ```
 
-<br/>
-
-## Common Mistakes
+### BFS를 구현할 때 주의해야 할 점
 
 - 시작점에 방문했다는 표시를 남기지 않는다.
 - 큐에 넣을 때 방문했다는 표시를 하는 대신 큐에서 빼낼 때 방문했다는 표시를 남긴다.
-  ⇒ 같은 큐에 여러 번 들어가게 되면서 시간 초과나 메모리 초과가 발생
-- 이웃한 원소가 배열의 범위를 벗어났는지에 대한 체크를 잘못했다.
+    
+    ⇒ 같은 큐에 여러 번 들어가게 되면서 시간 초과나 메모리 초과가 발생
+    
+- 이웃한 원소가 배열의 범위를 벗어 났는지에 대한 체크 잘하기 (Out of bounds 에러 방지
 
-<br/>
+## 시간복잡도
 
-## ❓ Problems
-
-| BOJ                                                                                     |
-| --------------------------------------------------------------------------------------- |
-| [그림](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1926.cpp)                  |
-| [미로찾기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2178.cpp)              |
-| [토마토](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7576.cpp)                |
-| [불!](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/4179.cpp)                   |
-| [숨바꼭질](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1697.cpps)             |
-| [유기농 배추](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1012.cpp)           |
-| [적록색약](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/10026.cpp)             |
-| [토마토](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7569.cpp)                |
-| [나이트의 이동](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/7562.cpp)         |
-| [불](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/5427.cpp)                    |
-| [영역 구하기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2583.cpp)           |
-| [단지번호 붙이기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2667.cpp)       |
-| [스타트링크](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/5014.cpp)            |
-| [안전 영역](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2468.cpp)             |
-| [상범 빌딩](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/6593.cpp)             |
-| [벽 부수고 이동하기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2206.cpp)    |
-| [텀 프로젝트](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/9466.cpp)           |
-| [빙산](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2573.cpp)                  |
-| [다리 만들기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/2146.cpp)           |
-| [숨바꼭질 3](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/13549.cpp)           |
-| [말이 되고픈 원숭이](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/1600.cpp)    |
-| [숨바꼭질 4](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/13913.cpp)           |
-| [벽 부수고 이동하기 2](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/14442.cpp) |
-| [벽 부수고 이동하기 3](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/16933.cpp) |
-| [확장 게임](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/16920.cpp)            |
-| [불켜기](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/11967.cpp)               |
-| [열쇠](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/9328.cpp)                  |
-| [백조의 호수](https://github.com/eunnbi/algorithm/blob/main/bfs/BOJ/3197.cpp)           |
+모든 칸이 큐에 1번씩 들어가므로 시간 복잡도는 칸이 N개일 때 O(N)
