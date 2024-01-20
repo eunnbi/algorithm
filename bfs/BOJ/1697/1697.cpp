@@ -25,5 +25,3 @@ int main() {
 	cout << dist[K];
 	return 0;
 }
-
-// https://www.acmicpc.net/problem/1697

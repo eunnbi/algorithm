@@ -47,6 +47,3 @@ int main() {
 	cout << ans;
 	return 0;
 }
-
-// 시작점이 여러 개 있을 때는 모든 시작점들을 큐에 넣고 BFS를 수행하면 된다.
-// https://www.acmicpc.net/problem/7576
